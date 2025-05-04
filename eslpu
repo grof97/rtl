@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# eslpu: update and upgrade slackpkg(8) packages and update ELILO to use a newer kernel and initrd
+# requires /usr/sbin to be in PATH
+
+sudo slackpkg update;
+sudo slackpkg install-new;
+sudo slackpkg upgrade-all;
+sudo slackpkg clean-system;
+
+sudo geninitrd;
+sudo eliloconfig;

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# kslpu: update and upgrade slackpkg(8) packages without updating any bootloader
+# requires /usr/sbin to be in PATH
+
+sudo slackpkg update;
+sudo slackpkg install-new;
+sudo slackpkg upgrade-all;
+sudo slackpkg clean-system;

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# htoff: stop the web server
+
+sudo chmod +x /etc/rc.d/rc.httpd;
+sudo /etc/rc.d/rc.httpd	stop;
+sudo chmod -x /etc/rc.d/rc.httpd;

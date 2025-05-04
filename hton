@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# hton: start the web server
+
+sudo chmod +x /etc/rc.d/rc.httpd;
+sudo /etc/rc.d/rc.httpd start;

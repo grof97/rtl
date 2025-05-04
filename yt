@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# yt: execute loud, monbat, and datime on xterm
+# I use this when watching YouTube
+
+
+WHERELOKNY=/usr/rtl
+
+xterm $WHERELOKNY/loud -geometry 47x15 &
+xterm $WHERELOKNY/monbat -geometry 47x15 &
+xterm $WHERELOKNY/datime -geometry 47x15 &
