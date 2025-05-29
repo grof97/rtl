@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# nfson: start the NFS server
+
+sudo chmod +x /etc/rc.d/rc.nfsd;
+sudo /etc/rc.d/rc.nfsd start;

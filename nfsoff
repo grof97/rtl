@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# nfsoff: stop the NFS server
+
+sudo chmod +x /etc/rc.d/rc.nfsd;
+sudo /etc/rc.d/rc.nfsd stop;
+sudo chmod -x /etc/rc.d/rc.nfsd;
